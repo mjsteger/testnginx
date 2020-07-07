@@ -1,0 +1,15 @@
+<html>
+<h1> Here is my awesome website. Check it out! </h1>
+<script>
+  function getRandomNumber(minRange, maxRange) {
+    return Math.floor(Math.random() * (maxRange + 1) + minRange);
+  }
+
+  window.onload = function() {
+    const rand = getRandomNumber(0, 100);
+    document.getElementById("myNumber").innerHTML = rand;
+  };
+</script>
+
+<div id="myNumber"></div>
+</html>
